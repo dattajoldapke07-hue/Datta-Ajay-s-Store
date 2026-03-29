@@ -5,13 +5,11 @@ body {
   overflow-x: hidden;
 }
 
-/* NEW Dark mode */
 .dark {
   background: #111;
   color: white;
 }
 
-/* 3D Intro */
 #intro {
   position: fixed;
   width: 100%;
@@ -107,7 +105,7 @@ button:hover {
   background: #ff3b2e;
 }
 
-#cart-modal {
+#cart-modal, #payment-modal, #order-box {
   position: fixed;
   top: 20%;
   left: 35%;
@@ -118,4 +116,10 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+@media(max-width:600px){
+  header{
+    flex-direction:column;
+  }
 }
